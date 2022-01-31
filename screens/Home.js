@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import axios from "axios";
 
 export default class HomeScreen extends React.Component {
@@ -7,13 +8,12 @@ export default class HomeScreen extends React.Component {
         super();
         this.state = {
             movieDetails: {},
-
         }
     }
     componentDidMount() {
-        this.getMovie();
+        //this.getMovie();
     }
-    timeconvert = (duration) =>{
+    /*timeconvert = (duration) =>{
         var hours = Math.floor(duration/60);
         var minutes = duration % 60;
         return `${hours} hours and ${minutes} minutes`;
@@ -58,11 +58,13 @@ export default class HomeScreen extends React.Component {
             console.log(error)
         })
     }
-
+    */
     render() {
         return (
             <View>
-                <Text>Hello Users</Text>
+                
+                    <Text>Hello Users</Text>
+                
             </View>
 
         )
